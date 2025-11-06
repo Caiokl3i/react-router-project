@@ -3,7 +3,7 @@ import FormRegister from '../../components/FormRegister/FormRegister'
 import { useState } from 'react'
 
 const Register = () => {
-    const [user, setUser] = useState([])
+    const [user, setUser] = useState('')
 
     return (
         <div className={styles.register}>

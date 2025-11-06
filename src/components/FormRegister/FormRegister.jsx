@@ -15,12 +15,11 @@ const FormRegister = ({ setUser }) => {
         //     email: email
         // }
 
-        setUser((prevUser) => [...prevUser, {
+        setUser({
             name: username,
             age: age,
             email: email
-        }
-        ])
+        })
 
         setUsername('')
         setAge('')
