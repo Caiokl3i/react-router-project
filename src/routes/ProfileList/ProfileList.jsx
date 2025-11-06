@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from './ProfileList.module.css'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export const ProfileList = () => {
+    const navigate = useNavigate()
+    
     const location = useLocation()
     const {name, age, email} = location.state || {}
 
@@ -12,7 +14,9 @@ export const ProfileList = () => {
                 <h1>{name}</h1>
 
                 <p>Idade: {age}</p>
-                <p>email: {email}</p>
+                <p>Email: {email}</p>
+
+                <button onClick={() => navigate(-1)}>Voltar</button>
             </div>
             
         </div>

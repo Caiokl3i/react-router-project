@@ -27,3 +27,13 @@
 .container p, h1 {
     font-size: 25px;
 }
+
+button {
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 231, 215);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.2s;
+}

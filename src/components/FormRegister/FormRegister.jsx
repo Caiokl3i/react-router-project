@@ -35,7 +35,7 @@ const FormRegister = ({ setUser }) => {
         <form className={styles.form} onSubmit={handleSubmit}>
             <input type="text" value={username} placeholder='Nome' required onChange={(e) => setUsername(e.target.value)} />
             <input type="number" value={age} placeholder='Idade' required onChange={(e) => setAge(e.target.value)} />
-            <input type="text" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
             <button type='submit' className={styles.button}>Salvar</button>
         </form>
 
